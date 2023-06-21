@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #fff;
+}
+
 /*MOBILE HEADER*/
 header {
   position: sticky;
