@@ -1,0 +1,46 @@
+/*FUENTES*/
+/*COLORES*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*MOBILE HEADER*/
+header {
+  height: 50px;
+}
+header .menu {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .menu .logo {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  color: #463f3a;
+}
+header .menu .menu-nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .menu .menu-nav li a {
+  color: #463f3a;
+}
+
+/*DESKTOP HEADER*/
+@media (min-width: 1024px) {
+  .menu {
+    height: 660px;
+    background-color: aqua;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

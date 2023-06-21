@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/_variables.scss","../scss/_comunes.scss"],"names":[],"mappings":"AAAA;AAIA;ACJA;EACI;EACA;EACA;EACA;;;AAEJ;AACA;EACI;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI,aDhBF;ECiBE;EACA,ODdD;;ACiBH;EACI;EACA;EACA;EACA;EACA,aDzBF;EC0BE;EACA;;AAEA;EACI,OD3BL;;;ACiCX;AACA;EACI;IACI;IACA","file":"style.css"}

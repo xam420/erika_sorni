@@ -1,0 +1,294 @@
+/*FUENTES*/
+/*COLORES*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/*MOBILE HEADER*/
+header {
+  position: sticky;
+  top: 0;
+  /*DESKTOP HEADER*/
+}
+header .menu {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+header .menu .logo {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  color: #463f3a;
+}
+header .menu .menu-nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+header .menu .menu-nav .btn-contacto {
+  background-color: #463f3a;
+  color: #fff;
+  padding: 15px;
+  transition: 0.5s;
+}
+header .menu .menu-nav .btn-contacto:hover {
+  background-color: transparent;
+  color: #463f3a;
+}
+header .menu .menu-nav li a {
+  color: #463f3a;
+}
+@media (min-width: 1024px) {
+  header .menu .menu-nav {
+    gap: 40px;
+  }
+}
+
+/*MOBILE MAIN*/
+main {
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+  /*DESKTOP MAIN*/
+}
+main .texto {
+  padding: 40px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+main .texto h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+main .texto h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+main .imagenes {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main .imagenes .imagen1, main .imagenes .imagen2 {
+  width: 450px;
+  height: 300px;
+  padding: 10px;
+}
+main .imagenes .imagen1 img, main .imagenes .imagen2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+  main .texto h1 {
+    font-size: 40px;
+  }
+  main .imagenes {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .imagenes .imagen1, main .imagenes .imagen2 {
+    width: 650px;
+    height: 450px;
+  }
+}
+main .comenzar {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background-color: #463f3a;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  transition: 0.5s;
+}
+main .comenzar:hover {
+  background-color: #fff;
+  color: #463f3a;
+}
+
+/*MOBILE ERIKA*/
+#erika {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+  /*DESKTOP ERIKA*/
+}
+#erika h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+#erika .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#erika .info .imagen {
+  width: 450px;
+  height: auto;
+  display: flex;
+}
+#erika .info .imagen img {
+  width: 100%;
+  height: 100%;
+}
+#erika .info .pre {
+  width: 450px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: right;
+  margin-top: 10px;
+}
+@media (min-width: 1024px) {
+  #erika .info {
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+  }
+  #erika .info .imagen {
+    width: 650px;
+    height: 600px;
+  }
+  #erika .info .imagen img {
+    object-fit: cover;
+  }
+  #erika .info .pre {
+    font-size: 30px;
+  }
+}
+
+/*MOBILE SERVICIOS*/
+#servicios {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+  /*DESKTOP SERVICIOS*/
+}
+#servicios .texto-serv {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  margin-bottom: 25px;
+}
+#servicios .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+#servicios .cards .card1, #servicios .cards .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#servicios .cards .card1 h2, #servicios .cards .card2 h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+#servicios .cards .icono1, #servicios .cards .icono2 {
+  width: 150px;
+  height: 150px;
+}
+#servicios .cards .icono1 img, #servicios .cards .icono2 img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #servicios .cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/*MOBILE CONTACTO*/
+#contacto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 0px 40px 0px 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /*DESKTOP CONTACTO*/
+}
+#contacto h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+#contacto .gmail {
+  margin-top: 20px;
+  width: 100%;
+  height: 70px;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+#contacto .gmail a {
+  color: #463f3a;
+}
+#contacto .redes {
+  display: flex;
+  gap: 10px;
+}
+#contacto .redes a {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #463f3a;
+  transition: 0.5s;
+}
+#contacto .redes a:hover {
+  color: #E1306C;
+}
+#contacto .redes .linke {
+  transition: 0.5s;
+}
+#contacto .redes .linke:hover {
+  color: #0e76a8;
+}
+@media (min-width: 1024px) {
+  #contacto .gmail {
+    height: 100px;
+    text-align: start;
+  }
+  #contacto .gmail a {
+    font-size: 30px;
+    padding-left: 100px;
+  }
+  #contacto .redes {
+    width: 100%;
+    height: 50px;
+  }
+  #contacto .redes a {
+    font-size: 30px;
+    padding-left: 100px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  background-color: #463f3a;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

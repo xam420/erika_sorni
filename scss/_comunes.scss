@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/*MOBILE HEADER*/
+header {
+    position: sticky;
+        top: 0;
+
+    .menu {
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5px;
+
+        
+        .logo {
+            font-family: $primera;
+            font-size: 25px;
+            color: $primario;
+        }
+        
+        .menu-nav {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-family: $segunda;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 7px;
+
+            .btn-contacto {
+                background-color: $primario;
+                color: $secundario;
+                padding: 15px;
+                transition: 0.5s;
+            }
+
+            .btn-contacto:hover {
+                background-color: transparent;
+                color: $primario;
+            }
+
+            li a {
+                color: $primario;
+            }
+        }
+    }
+
+    /*DESKTOP HEADER*/
+    @media(min-width: 1024px) {
+        .menu {
+            
+            .menu-nav {
+                gap: 40px;
+            }
+         }
+}
+}
+
+/*MOBILE MAIN*/
+main {
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+
+    .texto {
+        padding: 40px 0px 50px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            font-family: $primera;
+            font-weight: 200;
+        }
+
+        h1 {
+            font-family: $segunda;
+            font-weight: 700;
+        }
+    }
+
+    .imagenes {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .imagen1 {
+            width: 450px;
+            height: 300px;
+            padding: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .imagen2 {
+            @extend .imagen1;
+        }
+    }
+
+    /*DESKTOP MAIN*/
+    @media (min-width: 1024px){
+        .texto {
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        .imagenes {
+            flex-direction: row;
+            justify-content: center;
+    
+            .imagen1 {
+                width: 650px;
+                height: 450px;
+            }
+        }
+    }
+
+    .comenzar {
+        font-family: $segunda;
+        font-size: 20px;
+        background-color: $primario;
+        color: $secundario;
+        padding: 10px 20px 10px 20px;
+        transition: 0.5s;
+    }
+
+    .comenzar:hover {
+        background-color: $secundario;
+        color: $primario;
+    }
+}
+
+/*MOBILE ERIKA*/
+#erika{
+    margin-top: 40px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+
+    h2 {
+        font-family: $primera;
+        font-weight: 200;
+        margin-bottom: 15px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .imagen {
+            width: 450px;
+            height: auto;
+            display: flex;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .pre {
+            width: 450px;
+            font-family: $segunda;
+            font-size: 20px;
+            font-weight: 200;
+            text-align: right;
+            margin-top: 10px;
+        }
+    }
+
+    /*DESKTOP ERIKA*/
+    @media (min-width: 1024px){
+        .info {
+            flex-direction: row;
+            justify-content: space-around;
+            width: auto;
+
+            .imagen {
+                width: 650px;
+                height: 600px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            .pre {
+                font-size: 30px;
+            }
+        }
+        
+    }
+}
+
+/*MOBILE SERVICIOS*/
+#servicios {
+    margin-top: 40px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+
+    .texto-serv {
+        font-family: $primera;
+        font-weight: 200;
+        margin-bottom: 25px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            h2 {
+                font-family: $segunda;
+                font-size: 20px;
+                font-weight: 200;
+            }
+        }
+
+        .icono1 {
+            width: 150px;
+            height: 150px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .card2 {
+            @extend .card1;
+        }
+
+        .icono2 {
+            @extend .icono1;
+        }
+    }
+
+    /*DESKTOP SERVICIOS*/
+    @media (min-width: 1024px){
+        .cards {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+/*MOBILE CONTACTO*/
+#contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: $primera;
+        font-weight: 200;
+    }
+
+    .gmail {
+        margin-top: 20px;
+        width: 100%;
+        height: 70px;
+        font-size: 25px;
+        font-family: $segunda;
+        font-weight: 200;
+
+        a {
+            color: $primario;
+        }
+    }
+
+    .redes {
+        display: flex;
+        gap: 10px;
+
+        a {
+            font-family: $segunda;
+            font-size: 20px;
+            color: $primario;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            color: #E1306C;
+        }
+
+        .linke {
+            transition: 0.5s;
+        }
+
+        .linke:hover {
+            color: #0e76a8;
+        }
+    }
+
+    /*DESKTOP CONTACTO*/
+    @media (min-width: 1024px){
+        .gmail {
+            height: 100px;
+            text-align: start;
+
+            a {
+                font-size: 30px;
+                padding-left: 100px;
+            }
+        }
+
+        .redes {
+            width: 100%;
+            height: 50px;
+
+            a {
+                font-size: 30px;
+                padding-left: 100px;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    font-family: $segunda;
+    font-size: 12px;
+    background-color: $primario;
+    color: $secundario;
+}
+
+
+
+
+
+
+
+
